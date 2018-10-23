@@ -40,7 +40,6 @@ a:hover {
   width: 100%;
   padding: 20px;
   background: #efefef;
-  transition: all 2s;
 }
 
 .content:hover {
@@ -57,13 +56,12 @@ a:hover {
 }
 
 .shape {
-  border-radius: 100px;
-  margin-left: 100px;
-  width: 200px;  
+  margin: 300px;
+  width: 100px;  
   height: 200px;
-  background: #c63b23;
-  transition: transform 0.5s, background-color 2s;
+  background: royalblue;
 }
+
 
 .shape:hover {
   transform: rotateZ(45deg) scale(1.5);
@@ -72,10 +70,15 @@ a:hover {
 }
 
 @keyframes spin {
-    0%    {transform: rotate(0deg); }
-    25%   {transform: rotate(90deg); }
-    100%  {transform: rotate(360deg); }
-}
+  0% {
+    transform: rotateX(0deg);
+  }
+  25% {
+    transform: rotateX(60deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
 
 .variation-1 {
   animation-name: spin;
