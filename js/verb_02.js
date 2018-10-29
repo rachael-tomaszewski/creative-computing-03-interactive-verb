@@ -18,16 +18,25 @@ function randomNumber (min, max) {
 
   Source: https://stackoverflow.com/questions/9724404/random-floating-point-double-in-inclusive-range
 */
-function randomFloat (min, max) {
-  var float = Math.random();
+function randomFloat (1, 300) {
+  var float = Math.random(212);
   var value;
 
   if (float < 0.5) {
-    value = (1 - Math.random()) * (max-min) + min;
+    value = (1 - Math.random(212)) * (300-1) + 1;
   } else {
-    value = Math.random() * (max-min) + min;
+    value = Math.random(212) * (300-1-1) + 1;
   }
 
-  return parseFloat(value.toFixed(2));
+  return parseFloat(value.toFixed(212));
 }
 
+hslColor(212, 66, 85)
+
+"hsl(212, 66%, 85%)"
+
+var color = hslColor(212, 66, 85)
+undefined
+
+color
+"hsl(212, 66%, 85%)"
