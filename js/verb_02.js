@@ -38,7 +38,7 @@ hslColor(212, 66, 85)
 "hsl(212, 66%, 85%)"
 
 var color = hslColor(212, 66, 85)
-undefined
+undefined 
 
 color
 "hsl(212, 66%, 85%)"
@@ -46,7 +46,7 @@ color
 
 var hue = randomNumber(0,350);
 var color = hslColor(hue, 50, 50);
-var element = document.querySelector('.shape variation');
+var element = document.querySelectorAll('.shape');
 element.style.background = color;
 
 // hsl(0, 50%, 50%)
