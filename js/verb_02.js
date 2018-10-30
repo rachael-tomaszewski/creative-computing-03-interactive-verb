@@ -10,6 +10,8 @@ function randomNumber (min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+randomNumber()
+randomNumber()
 /*
   Returns a random floating point number between minimum value and maximum value
 
@@ -18,7 +20,7 @@ function randomNumber (min, max) {
 
   Source: https://stackoverflow.com/questions/9724404/random-floating-point-double-in-inclusive-range
 */
-function randomFloat (1, 300) {
+function hslColor (h, s, l) {
   var float = Math.random(212);
   var value;
 
@@ -28,7 +30,7 @@ function randomFloat (1, 300) {
     value = Math.random(212) * (300-1-1) + 1;
   }
 
-  return parseFloat(value.toFixed(212));
+  return hslColor(value.toFixed(212));
 }
 
 hslColor(212, 66, 85)
@@ -40,3 +42,18 @@ undefined
 
 color
 "hsl(212, 66%, 85%)"
+
+
+var hue = randomNumber(0,350);
+var color = hslColor(hue, 50, 50);
+var element = document.querySelector('.shape variation');
+element.style.background = color;
+
+// hsl(0, 50%, 50%)
+
+
+
+
+
+
+
