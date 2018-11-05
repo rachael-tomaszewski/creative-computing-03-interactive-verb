@@ -10,8 +10,8 @@ function randomNumber (min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-randomNumber()
-randomNumber()
+randomNumber();
+randomNumber();
 /*
   Returns a random floating point number between minimum value and maximum value
 
@@ -33,15 +33,15 @@ function hslColor (h, s, l) {
   return hslColor(value.toFixed(212));
 }
 
-hslColor(212, 66, 85)
+hslColor(212, 66, 85);
 
-"hsl(212, 66%, 85%)"
+"hsl(212, 66%, 85%)";
 
-var color = hslColor(212, 66, 85)
-undefined 
+var color = hslColor(212, 66, 85);
+undefined;
 
-color
-"hsl(212, 66%, 85%)"
+color;
+"hsl(212, 66%, 85%)";
 
 
 var hue = randomNumber(0,350);
