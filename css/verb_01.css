@@ -23,7 +23,7 @@ h1 {
 }
 
 a {
-  color: red;
+  color: royalblue
   text-decoration: none;
   transition: all 2s;
   transition-delay: .5s;
@@ -31,7 +31,7 @@ a {
 }
 
 a:hover {
-  color: red;
+  color: royalblue;
 }
 
 .content {
