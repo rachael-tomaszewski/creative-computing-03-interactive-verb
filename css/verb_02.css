@@ -12,7 +12,7 @@ body {
   padding: 0;
   width: 100vw;
   min-height: 100vh;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Lato', sans-serif;
 }
 
 h1 {
@@ -23,7 +23,7 @@ h1 {
 }
 
 a {
-  color: red;
+  color: royalblue;
   text-decoration: none;
   transition: all 2s;
   transition-delay: .5s; 
@@ -39,6 +39,7 @@ a:hover {
   width: 100%;
   padding: 20px;
   background: #efefef;
+  transition: all 2s;
 }
 
 .content:hover {
@@ -61,6 +62,7 @@ a:hover {
   width: 100px;  
   height: 200px;
   background: royalblue;
+  transition: transform 0.5s, background-color 2s;
 }
 
 
